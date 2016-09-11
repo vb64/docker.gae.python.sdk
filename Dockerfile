@@ -4,8 +4,8 @@ MAINTAINER Vitaly Bogomolov <vit.sar68@gmail.com>
 # Prepare the image.
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && apt-get install -y -qq --no-install-recommends wget unzip python2.7 python-pip python-docutils openssh-client python-openssl && apt-get clean
-
-RUN pip install mock coverage pylint flake8 Pillow
+RUN pip install mock coverage pylint flake8
+RUN pip install Pillow
 
 # Install the Google Cloud SDK.
 ENV HOME /
