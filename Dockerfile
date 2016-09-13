@@ -9,7 +9,8 @@ RUN pip install Pillow
 
 # Install the Google Cloud SDK.
 RUN cd /usr/local && wget https://storage.googleapis.com/appengine-sdks/featured/google_appengine_1.9.40.zip && unzip google_appengine_1.9.40.zip && rm google_appengine_1.9.40.zip
-ENV PATH=$PATH:/usr/local/google_appengine/
+ENV APP_ENGINE_DIR=/usr/local/google_appengine/
+ENV PATH=$PATH:$APP_ENGINE_DIR
 
 CMD ["/bin/bash"]
 
