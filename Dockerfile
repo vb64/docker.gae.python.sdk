@@ -8,9 +8,8 @@ RUN pip install mock coverage pylint flake8
 RUN pip install Pillow
 
 # Install the Google Cloud SDK.
-RUN cd /usr/local
-RUN wget https://storage.googleapis.com/appengine-sdks/featured/google_appengine_1.9.40.zip && unzip google_appengine_1.9.40.zip && rm google_appengine_1.9.40.zip
-ENV PATH=$PATH:/usr/local/google_appengine_1.9.40/google_appengine/
+RUN cd /usr/local && wget https://storage.googleapis.com/appengine-sdks/featured/google_appengine_1.9.40.zip && unzip google_appengine_1.9.40.zip && rm google_appengine_1.9.40.zip
+ENV PATH=$PATH:/usr/local/google_appengine/
 
 CMD ["/bin/bash"]
 
