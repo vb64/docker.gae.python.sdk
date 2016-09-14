@@ -1,2 +1,3 @@
-# docker.gae.python.sdk
-Docker image for Python Google App Engine projects local unit testing with bitbucket pipelines
+# Docker image for Google App Engine python projects local unit testing
+
+This docker primary developed for bitbucket pipelines feature. It can run autotests on each code commit.
