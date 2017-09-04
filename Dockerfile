@@ -14,6 +14,6 @@ RUN pip install mock coverage pylint flake8
 RUN pip install Pillow
 RUN pip install django==1.4
 RUN pip install Babel
+RUN pip install HTTPretty
 
 CMD ["/bin/bash"]
-
