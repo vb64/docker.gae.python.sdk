@@ -10,10 +10,4 @@ RUN cd /usr/local && wget https://storage.googleapis.com/appengine-sdks/featured
 ENV APP_ENGINE_DIR=/usr/local/google_appengine/
 ENV PATH=$PATH:$APP_ENGINE_DIR
 
-RUN pip install mock coverage pylint flake8
-RUN pip install Pillow
-RUN pip install django==1.4
-RUN pip install Babel
-RUN pip install HTTPretty
-
 CMD ["/bin/bash"]
