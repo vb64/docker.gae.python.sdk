@@ -5,13 +5,14 @@
 
 The docker for bitbucket pipelines. Contains:
 
-- Python 2.7.15
+- Python 2.7.9
 - Google App Engine SDK 1.9.54
 - requests 2.22.0
-- flask 1.0.2
+- flask 1.0.3
 - Babel 2.6.0
 - mock 3.0.5
 - pylint 1.9.4
-- coverage
-- flake8
+- coverage 4.5.3
+- flake8 3.7.7
+- httpretty 0.9.6
 - some tools for autotest GAE code
